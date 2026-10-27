@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | Rasti</title>
+
+    <meta name="description"
+          content="Privacy Policy of Rasti: how bill data, receipts, permissions and diagnostic information are handled.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7ff;
+            color: #14243a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #007653;
+            color: #ffffff;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            color: #d2f9e9;
+        }
+
+        nav {
+            max-width: 850px;
+            margin: 24px auto 0;
+            padding: 0 16px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 4px 6px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: #ffffff;
+            color: #007653;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #d2f9e9;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 24px auto 32px;
+            padding: 36px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        section + section {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #dce3ee;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007653;
+            font-size: 24px;
+        }
+
+        h3 {
+            margin-top: 28px;
+            margin-bottom: 8px;
+            color: #00513a;
+            font-size: 19px;
+        }
+
+        p, li {
+            margin: 8px 0;
+        }
+
+        a {
+            color: #1e40af;
+            overflow-wrap: anywhere;
+        }
+
+        .updated {
+            color: #596272;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #596272;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 26px 16px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            main {
+                margin: 16px;
+                padding: 22px 18px;
+                border-radius: 8px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Privacy Policy</h1>
+    <p>Rasti</p>
+</header>
+
+<nav>
+    <a href="#en">English</a>
+    <a href="#pt">Português</a>
+    <a href="#es">Español</a>
+    <a href="terms.html">Terms of Use</a>
+</nav>
+
+<main>
+
+<!-- ============================ ENGLISH ============================ -->
+<section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last updated: October 27, 2026</p>
+
+    <p>
+        Rasti (package <code>com.castillo.devs.rasti</code>) is an app to organize and remember monthly
+        bills: due dates, amounts, payment codes (PIX and boleto), receipts
+        and payment history. This policy explains what information the app
+        handles and how.
+    </p>
+
+    <h3>1. No account, data stays on your device</h3>
+    <p>
+        The app does not require an account and does not ask for your name,
+        email, phone number, contacts or location. The bills you register
+        (names, categories, amounts, due dates, notes, payment codes,
+        payment dates and receipts) are stored only on your device. They are
+        not sent to our servers or to third parties, and we have no access to
+        them.
+    </p>
+    <p>
+        Notes, payment codes and receipt files are encrypted on the device
+        with AES-256, using a key kept in the Android Keystore or iOS
+        Keychain. The app data is excluded from Android cloud backups.
+    </p>
+    <p>
+        In the web version, the same data is stored in your browser's local
+        storage (IndexedDB) on your computer.
+    </p>
+
+    <h3>2. Permissions</h3>
+    <ul>
+        <li><strong>Camera:</strong> to scan PIX QR codes and boleto barcodes,
+            and to photograph receipts. Images stay on the device.</li>
+        <li><strong>Photos and files:</strong> only the image or PDF you choose
+            to attach as a receipt.</li>
+        <li><strong>Notifications:</strong> local reminders before due dates.
+            They are scheduled on the device; no server is involved.
+            The app also restores them after the device restarts.</li>
+        <li><strong>Biometrics (fingerprint, Face ID) or device PIN:</strong>
+            optional app lock. Authentication is handled by the operating
+            system; the app never receives your biometric data.</li>
+        <li><strong>Vibration:</strong> a short buzz when you mark a bill as
+            paid.</li>
+    </ul>
+
+    <h3>3. Crash reports (Firebase Crashlytics)</h3>
+    <p>
+        On Android and iOS, the app uses Firebase Crashlytics, a Google
+        service, to detect and fix errors. When the app crashes or an error
+        occurs, Crashlytics may collect diagnostic information: the error
+        and stack trace, app version, device model, operating system version,
+        and an installation identifier generated by Firebase.
+    </p>
+    <p>
+        Crash reports do not include your bills, amounts, notes, payment codes
+        or receipts: the app removes the values of database operations before
+        sending a report.
+    </p>
+    <p>
+        You can turn crash reports off at any time in
+        <em>Settings → Send error reports</em>. Crash reports are not used in
+        the web version.
+    </p>
+    <ul>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+    </ul>
+
+    <h3>4. Advertising, analytics and sale of data</h3>
+    <p>
+        The app does not show advertisements, does not use analytics or
+        advertising services, and does not sell or share personal
+        information. If this changes in a future version, this policy will
+        be updated before the change takes effect.
+    </p>
+
+    <h3>5. Data retention and deletion</h3>
+    <p>
+        You can delete any bill in the app. Uninstalling the app or clearing
+        its data removes all the information stored on the device. Crash
+        reports are kept by Firebase according to Google's retention policies
+        (currently 90 days); you can ask us to delete them using the contact
+        below.
+    </p>
+
+    <h3>6. Your rights (LGPD and other laws)</h3>
+    <p>
+        Under the Brazilian General Data Protection Law (LGPD, Law
+        13.709/2018) and similar laws, you may request confirmation of
+        processing, access, correction, deletion and information about the
+        sharing of your data. Since your bills are stored only on your device,
+        you control them directly. For diagnostic data, contact us.
+    </p>
+
+    <h3>7. Children</h3>
+    <p>
+        The app is not directed to children under 13 and does not knowingly
+        collect information from them.
+    </p>
+
+    <h3>8. Terms of use</h3>
+    <p>
+        The app is an organizer and reminder tool; it does not make payments.
+        The responsibilities for reminders, payment codes and the information
+        you enter are described in the
+        <a href="terms.html#en">Terms of Use</a>.
+    </p>
+
+    <h3>9. Changes to this policy</h3>
+    <p>
+        This policy may be updated when the app or its data practices change.
+        Updates will be published on this page with a new date.
+    </p>
+
+    <h3>10. Contact</h3>
+    <p>
+        <strong>Castillo Devs</strong><br>
+        Email: <a href="mailto:castgabreu@gmail.com">castgabreu@gmail.com</a>
+    </p>
+</section>
+
+<!-- =========================== PORTUGUÊS =========================== -->
+<section id="pt" lang="pt-BR">
+    <h2>Política de Privacidade</h2>
+    <p class="updated">Última atualização: 27 de outubro de 2026</p>
+
+    <p>
+        Rasti (pacote <code>com.castillo.devs.rasti</code>) é um app para organizar e lembrar as contas
+        do mês: vencimentos, valores, códigos de pagamento (PIX e boleto),
+        comprovantes e histórico de pagamentos. Esta política explica quais
+        informações o app trata e como.
+    </p>
+
+    <h3>1. Sem conta, os dados ficam no seu aparelho</h3>
+    <p>
+        O app não exige cadastro e não pede seu nome, e-mail, telefone,
+        contatos ou localização. As contas que você registra (nomes,
+        categorias, valores, vencimentos, notas, códigos de pagamento, datas
+        de pagamento e comprovantes) ficam armazenadas apenas no seu aparelho.
+        Elas não são enviadas aos nossos servidores nem a terceiros, e nós não
+        temos acesso a elas.
+    </p>
+    <p>
+        Notas, códigos de pagamento e arquivos de comprovantes são
+        criptografados no aparelho com AES-256, com uma chave guardada no
+        Android Keystore ou no Keychain do iOS. Os dados do app não entram nos
+        backups em nuvem do Android.
+    </p>
+    <p>
+        Na versão web, os mesmos dados ficam no armazenamento local do seu
+        navegador (IndexedDB), no seu computador.
+    </p>
+
+    <h3>2. Permissões</h3>
+    <ul>
+        <li><strong>Câmera:</strong> para ler QR codes PIX e códigos de barras
+            de boletos e fotografar comprovantes. As imagens ficam no
+            aparelho.</li>
+        <li><strong>Fotos e arquivos:</strong> apenas a imagem ou o PDF que você
+            escolher anexar como comprovante.</li>
+        <li><strong>Notificações:</strong> lembretes locais antes do vencimento.
+            São agendados no aparelho, sem nenhum servidor. O app também os
+            restaura depois que o aparelho é reiniciado.</li>
+        <li><strong>Biometria (digital, Face ID) ou PIN do aparelho:</strong>
+            bloqueio opcional do app. A autenticação é feita pelo sistema
+            operacional; o app nunca recebe seus dados biométricos.</li>
+        <li><strong>Vibração:</strong> uma vibração curta ao marcar uma conta
+            como paga.</li>
+    </ul>
+
+    <h3>3. Relatórios de falhas (Firebase Crashlytics)</h3>
+    <p>
+        No Android e no iOS, o app usa o Firebase Crashlytics, um serviço do
+        Google, para detectar e corrigir erros. Quando o app falha ou ocorre
+        um erro, o Crashlytics pode coletar informações de diagnóstico: o erro
+        e o rastreamento da pilha, a versão do app, o modelo do aparelho, a
+        versão do sistema operacional e um identificador de instalação gerado
+        pelo Firebase.
+    </p>
+    <p>
+        Os relatórios não incluem suas contas, valores, notas, códigos de
+        pagamento nem comprovantes: o app remove os valores das operações do
+        banco de dados antes de enviar um relatório.
+    </p>
+    <p>
+        Você pode desativar os relatórios a qualquer momento em
+        <em>Ajustes → Enviar relatórios de erros</em>. Os relatórios não são
+        usados na versão web.
+    </p>
+    <ul>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacidade e segurança no Firebase</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+    </ul>
+
+    <h3>4. Publicidade, análise e venda de dados</h3>
+    <p>
+        O app não exibe anúncios, não usa serviços de análise ou publicidade
+        e não vende nem compartilha informações pessoais. Se isso mudar em uma
+        versão futura, esta política será atualizada antes da mudança.
+    </p>
+
+    <h3>5. Retenção e exclusão</h3>
+    <p>
+        Você pode excluir qualquer conta no app. Desinstalar o app ou limpar
+        os dados dele apaga todas as informações guardadas no aparelho. Os
+        relatórios de falhas são mantidos pelo Firebase conforme as políticas
+        de retenção do Google (atualmente 90 dias); você pode pedir a exclusão
+        pelo contato abaixo.
+    </p>
+
+    <h3>6. Seus direitos (LGPD)</h3>
+    <p>
+        Pela Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018), você pode
+        solicitar a confirmação do tratamento, o acesso, a correção, a
+        exclusão e informações sobre o compartilhamento dos seus dados. Como
+        suas contas ficam apenas no seu aparelho, você as controla
+        diretamente. Para os dados de diagnóstico, fale conosco.
+    </p>
+
+    <h3>7. Crianças</h3>
+    <p>
+        O app não é direcionado a menores de 13 anos e não coleta
+        intencionalmente informações deles.
+    </p>
+
+    <h3>8. Termos de uso</h3>
+    <p>
+        O app é uma ferramenta para organizar e lembrar contas; ele não faz
+        pagamentos. As responsabilidades sobre lembretes, códigos de pagamento
+        e as informações que você registra estão nos
+        <a href="terms.html#pt">Termos de Uso</a>.
+    </p>
+
+    <h3>9. Alterações nesta política</h3>
+    <p>
+        Esta política pode ser atualizada quando o app ou suas práticas de
+        dados mudarem. As atualizações serão publicadas nesta página com uma
+        nova data.
+    </p>
+
+    <h3>10. Contato</h3>
+    <p>
+        <strong>Castillo Devs</strong><br>
+        E-mail: <a href="mailto:castgabreu@gmail.com">castgabreu@gmail.com</a>
+    </p>
+</section>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<section id="es" lang="es">
+    <h2>Política de Privacidad</h2>
+    <p class="updated">Última actualización: 27 de octubre de 2026</p>
+
+    <p>
+        Rasti (paquete <code>com.castillo.devs.rasti</code>) es una app para organizar y recordar las
+        cuentas del mes: vencimientos, montos, códigos de pago (PIX y boleto),
+        comprobantes e historial de pagos. Esta política explica qué
+        información maneja la app y cómo.
+    </p>
+
+    <h3>1. Sin cuenta, los datos quedan en tu dispositivo</h3>
+    <p>
+        La app no requiere registro y no pide tu nombre, correo, teléfono,
+        contactos ni ubicación. Las cuentas que registras (nombres,
+        categorías, montos, vencimientos, notas, códigos de pago, fechas de
+        pago y comprobantes) se guardan solo en tu dispositivo. No se envían a
+        nuestros servidores ni a terceros, y no tenemos acceso a ellas.
+    </p>
+    <p>
+        Las notas, los códigos de pago y los archivos de comprobantes se
+        cifran en el dispositivo con AES-256, con una clave guardada en el
+        Android Keystore o en el Keychain de iOS. Los datos de la app no se
+        incluyen en las copias de seguridad en la nube de Android.
+    </p>
+    <p>
+        En la versión web, los mismos datos se guardan en el almacenamiento
+        local de tu navegador (IndexedDB), en tu computadora.
+    </p>
+
+    <h3>2. Permisos</h3>
+    <ul>
+        <li><strong>Cámara:</strong> para leer códigos QR PIX y códigos de
+            barras de boletos y fotografiar comprobantes. Las imágenes quedan
+            en el dispositivo.</li>
+        <li><strong>Fotos y archivos:</strong> solo la imagen o el PDF que elijas
+            adjuntar como comprobante.</li>
+        <li><strong>Notificaciones:</strong> recordatorios locales antes del
+            vencimiento. Se programan en el dispositivo, sin ningún servidor.
+            La app también los restaura después de reiniciar el dispositivo.</li>
+        <li><strong>Biometría (huella, Face ID) o PIN del dispositivo:</strong>
+            bloqueo opcional de la app. La autenticación la hace el sistema
+            operativo; la app nunca recibe tus datos biométricos.</li>
+        <li><strong>Vibración:</strong> una vibración corta al marcar una
+            cuenta como pagada.</li>
+    </ul>
+
+    <h3>3. Reportes de errores (Firebase Crashlytics)</h3>
+    <p>
+        En Android e iOS, la app usa Firebase Crashlytics, un servicio de
+        Google, para detectar y corregir errores. Cuando la app falla u ocurre
+        un error, Crashlytics puede recopilar información de diagnóstico: el
+        error y la pila de llamadas, la versión de la app, el modelo del
+        dispositivo, la versión del sistema operativo y un identificador de
+        instalación generado por Firebase.
+    </p>
+    <p>
+        Los reportes no incluyen tus cuentas, montos, notas, códigos de pago
+        ni comprobantes: la app elimina los valores de las operaciones de la
+        base de datos antes de enviar un reporte.
+    </p>
+    <p>
+        Puedes desactivar los reportes en cualquier momento en
+        <em>Ajustes → Enviar reportes de errores</em>. Los reportes no se usan
+        en la versión web.
+    </p>
+    <ul>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacidad y seguridad en Firebase</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
+    </ul>
+
+    <h3>4. Publicidad, análisis y venta de datos</h3>
+    <p>
+        La app no muestra anuncios, no usa servicios de análisis ni de
+        publicidad, y no vende ni comparte información personal. Si esto
+        cambia en una versión futura, esta política se actualizará antes del
+        cambio.
+    </p>
+
+    <h3>5. Conservación y eliminación</h3>
+    <p>
+        Puedes eliminar cualquier cuenta en la app. Desinstalar la app o
+        borrar sus datos elimina toda la información guardada en el
+        dispositivo. Los reportes de errores los conserva Firebase según las
+        políticas de retención de Google (actualmente 90 días); puedes pedir
+        su eliminación con el contacto de abajo.
+    </p>
+
+    <h3>6. Tus derechos (LGPD y otras leyes)</h3>
+    <p>
+        Según la Ley General de Protección de Datos de Brasil (LGPD, Ley
+        13.709/2018) y leyes similares, puedes solicitar la confirmación del
+        tratamiento, el acceso, la corrección, la eliminación e información
+        sobre el uso compartido de tus datos. Como tus cuentas están solo en
+        tu dispositivo, las controlas directamente. Para los datos de
+        diagnóstico, contáctanos.
+    </p>
+
+    <h3>7. Niños</h3>
+    <p>
+        La app no está dirigida a menores de 13 años y no recopila
+        intencionalmente información de ellos.
+    </p>
+
+    <h3>8. Términos de uso</h3>
+    <p>
+        La app es una herramienta para organizar y recordar cuentas; no
+        realiza pagos. Las responsabilidades sobre recordatorios, códigos de
+        pago y la información que registras están en los
+        <a href="terms.html#es">Términos de Uso</a>.
+    </p>
+
+    <h3>9. Cambios en esta política</h3>
+    <p>
+        Esta política puede actualizarse cuando cambien la app o sus prácticas
+        de datos. Las actualizaciones se publicarán en esta página con una
+        nueva fecha.
+    </p>
+
+    <h3>10. Contacto</h3>
+    <p>
+        <strong>Castillo Devs</strong><br>
+        Correo: <a href="mailto:castgabreu@gmail.com">castgabreu@gmail.com</a>
+    </p>
+</section>
+
+</main>
+
+<footer>
+    &copy; 2026 Castillo Devs. All rights reserved.
+</footer>
+
+</body>
+</html>
